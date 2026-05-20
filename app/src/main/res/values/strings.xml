@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LearnBridge</string>
+
+    <!-- Auth -->
+    <string name="login_success">Login successful</string>
+    <string name="login_failed">Invalid email or password</string>
+    <string name="register_success">Registration successful</string>
+    <string name="error_fill_fields">Please fill all fields</string>
+
+    <!-- Profile -->
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="photo_selected">Photo selected</string>
+    <string name="photo_save_failed">Failed to save photo</string>
+    <string name="account_deleted">Account deleted</string>
+
+    <!-- Subscription -->
+    <string name="upgrade_success">Upgraded to Premium!</string>
+    <string name="cancel_success">Subscription cancelled</string>
+
+    <!-- Courses -->
+    <string name="enroll_success">Enrolled successfully</string>
+    <string name="lesson_complete">Lesson completed! +10 XP</string>
+    <string name="course_complete">Course completed! +50 XP</string>
+
+</resources>

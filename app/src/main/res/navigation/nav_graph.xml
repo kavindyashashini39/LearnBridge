@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.app.learnbridge.ui.fragments.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.app.learnbridge.ui.fragments.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.app.learnbridge.ui.fragments.AuthFragment"
+        android:label="AuthFragment"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_authFragment_to_surveyGoalFragment"
+            app:destination="@id/surveyGoalFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_authFragment_to_xpRewardFragment"
+            app:destination="@id/xpRewardFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_googleSignInFragment"
+            app:destination="@id/googleSignInFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.learnbridge.ui.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.app.learnbridge.ui.fragments.AdminLoginFragment"
+        android:label="Admin Login"
+        tools:layout="@layout/fragment_admin_login">
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.app.learnbridge.ui.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_surveyGoalFragment"
+            app:destination="@id/surveyGoalFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/googleSignInFragment"
+        android:name="com.app.learnbridge.ui.fragments.GoogleSignInFragment"
+        android:label="GoogleSignInFragment"
+        tools:layout="@layout/fragment_google_sign_in">
+        <action
+            android:id="@+id/action_googleSignInFragment_to_xpRewardFragment"
+            app:destination="@id/xpRewardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/xpRewardFragment"
+        android:name="com.app.learnbridge.ui.fragments.XpRewardFragment"
+        android:label="XpRewardFragment"
+        tools:layout="@layout/fragment_xp_reward">
+        <action
+            android:id="@+id/action_xpRewardFragment_to_recommendationIntroFragment"
+            app:destination="@id/recommendationIntroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recommendationIntroFragment"
+        android:name="com.app.learnbridge.ui.fragments.RecommendationIntroFragment"
+        android:label="RecommendationIntroFragment"
+        tools:layout="@layout/fragment_recommendation_intro">
+        <action
+            android:id="@+id/action_recommendationIntroFragment_to_surveyGoalFragment"
+            app:destination="@id/surveyGoalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyGoalFragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyGoalFragment"
+        android:label="SurveyGoalFragment"
+        tools:layout="@layout/fragment_survey_goal">
+        <action
+            android:id="@+id/action_surveyGoalFragment_to_surveyExperienceFragment"
+            app:destination="@id/surveyExperienceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyExperienceFragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyExperienceFragment"
+        android:label="SurveyExperienceFragment"
+        tools:layout="@layout/fragment_survey_experience">
+        <action
+            android:id="@+id/action_surveyExperienceFragment_to_surveyInterests1Fragment"
+            app:destination="@id/surveyInterests1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyInterests1Fragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyInterests1Fragment"
+        android:label="SurveyInterests1Fragment"
+        tools:layout="@layout/fragment_survey_interests1">
+        <action
+            android:id="@+id/action_surveyInterests1Fragment_to_surveyInterests2Fragment"
+            app:destination="@id/surveyInterests2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyInterests2Fragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyInterests2Fragment"
+        android:label="SurveyInterests2Fragment"
+        tools:layout="@layout/fragment_survey_interests2">
+        <action
+            android:id="@+id/action_surveyInterests2Fragment_to_surveyCareerStageFragment"
+            app:destination="@id/surveyCareerStageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyCareerStageFragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyCareerStageFragment"
+        android:label="SurveyCareerStageFragment"
+        tools:layout="@layout/fragment_survey_career_stage">
+        <action
+            android:id="@+id/action_surveyCareerStageFragment_to_surveyHobbiesFragment"
+            app:destination="@id/surveyHobbiesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surveyHobbiesFragment"
+        android:name="com.app.learnbridge.ui.fragments.SurveyHobbiesFragment"
+        android:label="SurveyHobbiesFragment"
+        tools:layout="@layout/fragment_survey_hobbies">
+        <action
+            android:id="@+id/action_surveyHobbiesFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.app.learnbridge.ui.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/recommendationsFragment"
+        android:name="com.app.learnbridge.ui.fragments.RecommendationsFragment"
+        android:label="RecommendationsFragment"
+        tools:layout="@layout/fragment_recommendations" />
+
+    <fragment
+        android:id="@+id/certificatesFragment"
+        android:name="com.app.learnbridge.ui.fragments.CertificatesFragment"
+        android:label="CertificatesFragment"
+        tools:layout="@layout/fragment_certificates" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.app.learnbridge.ui.fragments.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_coursePlayerFragment"
+            app:destination="@id/coursePlayerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/earnFragment"
+        android:name="com.app.learnbridge.ui.fragments.EarnFragment"
+        android:label="EarnFragment"
+        tools:layout="@layout/fragment_earn" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.learnbridge.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_subscriptionFragment"
+            app:destination="@id/subscriptionFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.app.learnbridge.ui.fragments.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/subscriptionFragment"
+        android:name="com.app.learnbridge.ui.fragments.SubscriptionFragment"
+        android:label="SubscriptionFragment"
+        tools:layout="@layout/fragment_subscription">
+        <action
+            android:id="@+id/action_subscriptionFragment_to_transactionHistoryFragment"
+            app:destination="@id/transactionHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionHistoryFragment"
+        android:name="com.app.learnbridge.ui.fragments.TransactionHistoryFragment"
+        android:label="Transaction History"
+        tools:layout="@layout/fragment_transaction_history" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.app.learnbridge.ui.fragments.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/courseDetailsFragment"
+        android:name="com.app.learnbridge.ui.fragments.CourseDetailsFragment"
+        android:label="CourseDetailsFragment"
+        tools:layout="@layout/fragment_course_details">
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_coursePlayerFragment"
+            app:destination="@id/coursePlayerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coursePlayerFragment"
+        android:name="com.app.learnbridge.ui.fragments.CoursePlayerFragment"
+        android:label="Course Player"
+        tools:layout="@layout/fragment_course_player">
+        <argument
+            android:name="courseId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.app.learnbridge.ui.fragments.AdminHomeFragment"
+        android:label="Admin Dashboard"
+        tools:layout="@layout/fragment_admin_home">
+        <action
+            android:id="@+id/action_adminHomeFragment_to_addEditCourseFragment"
+            app:destination="@id/addEditCourseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditCourseFragment"
+        android:name="com.app.learnbridge.ui.fragments.AddEditCourseFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_edit_course">
+        <argument
+            android:name="courseId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            android:defaultValue="Add Course"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

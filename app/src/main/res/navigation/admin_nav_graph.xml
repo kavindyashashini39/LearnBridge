@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/adminDashboardFragment">
+
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.app.learnbridge.ui.fragments.AdminDashboardFragment"
+        android:label="Admin Dashboard"
+        tools:layout="@layout/fragment_admin_dashboard">
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_addEditCourseFragment"
+            app:destination="@id/addEditCourseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditCourseFragment"
+        android:name="com.app.learnbridge.ui.fragments.AddEditCourseFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_edit_course">
+        <argument
+            android:name="courseId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            android:defaultValue="Add Course"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/forYou"
+        android:icon="@drawable/baseline_auto_awesome_24"
+        android:title="For You" />
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Explore" />
+    <item
+        android:id="@+id/learn"
+        android:icon="@drawable/baseline_create_24"
+        android:title="Learn" />
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/outline_browse_24"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/shop"
+        android:icon="@drawable/baseline_call_missed_outgoing_24"
+        android:title="More" />
+</menu>
