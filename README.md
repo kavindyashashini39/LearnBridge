@@ -19,10 +19,10 @@ This project was collaboratively developed by our engineering team. Each member 
 
  Key Features
 
-Tailored User Onboarding:** Dynamic onboarding screens capture student learning preferences via intuitive multi-step surveys.
-  Component-Driven UI/UX:** High-performance, modular graphical assets featuring premium badge rewards (`bg_pro_badge`), input forms, and dynamic action states (`bg_action_blue`).
-  Analytical Dashboards:** Comprehensive view tracking that updates structural progress components instantly as students complete milestones.
-  Secure Checkout Emulation:** Specialized checkout fields supporting credit card structures and explicit breakdown lists for transaction verifications.
+Tailored User Onboarding: Dynamic onboarding screens capture student learning preferences via intuitive multi-step surveys.
+  Component-Driven UI/UX:High-performance, modular graphical assets featuring premium badge rewards (`bg_pro_badge`), input forms, and dynamic action states (`bg_action_blue`).
+  Analytical Dashboards:Comprehensive view tracking that updates structural progress components instantly as students complete milestones.
+  Secure Checkout Emulation: Specialized checkout fields supporting credit card structures and explicit breakdown lists for transaction verifications.
 
 ---
 
@@ -35,20 +35,3 @@ Build Configuration: Gradle (Kotlin DSL / Groovy)
 Minimum SDK Support: API 24 (Android 7.0 Nougat)
 Target SDK Version: API 34/35
 
----
-
- Repository Directory Insights
-
-The source structure adheres strictly to standard clean Android architecture guidelines:
-`app/src/main/res/layout/`: Contains core structural fragments for onboarding interest selectors, subscription screens, profile settings, and payment summaries.
-  `app/src/main/res/drawable/`: Houses optimized resource vectors including brand assets (`google.png`, `ibm.png`, `microsoft.png`) and reusable layout backgrounds.
-
----
-
- Local Development Setup
-
-To replicate, audit, or run this project locally, execute the following steps:
-
-1. Clone the Repository:
-   ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/LearnBridge.git](https://github.com/YOUR_GITHUB_USERNAME/LearnBridge.git)
